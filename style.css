@@ -1,39 +1,105 @@
+
+/* LAYOUT */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
 header {
-    background-color: #1f2937;
-    color: #f9faf8;
-    border: red solid 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px;
+    background-color: #1f2937;
 }
 
-header a {
-    color: inherit;
+header * {
     text-decoration: none;
-}
-
-.header-logo {
-    font-size: 24px;
-}
-
-nav {
-    font-size: 18px;
     color: #e5e7eb;
+    padding: 10px;
 }
 
 .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #1f2937;
-    color: #f9faf8;
+    color: #e5e7eb;
+    font-size: 18px;
+    padding: 5px;
+}
 
+.hero > * {
+    margin: 5px;
+    padding: 5px;
+}
+
+.hero h1 {
+    font: 48px extra-bold;
+    color: #f9faf8;
+}
+
+.hero button {
+    padding: 20px;
+}
+
+#best-issues-title {
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 .best-issues {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
+.single-issue {
+    padding: 40px;
+}
 
-.best-issues img {
-    width: 20%;
-    margin: 5em;
+.single-issue * {
+    text-align: center;
+    width: 100%;
+}
+
+.subtext {
+      padding: 60px;
+      background-color: #e5e7eb;
+      font-style: italic;
+      margin-top: 20px;
+}
+
+.cta > * {
+    padding: 10px;
+    margin: 10px;
+    color: #f9faf8;
+
+}
+
+.cta {
+    margin: 40px;
+    padding: 20px;
+    background-color: #3882f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    border: #f9faf8 1px solid;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    color: #f9faf8;
+    background-color: #1f2937;
+    padding: 5px;
 }
